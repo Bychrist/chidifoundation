@@ -21,10 +21,10 @@ $email = trim($data->Email);
 $subject = $data->Subject;
 $message = $data->Message;
 $phone = trim($data->Phone);
-$owneremail = "info@chidianyaegbufoundation.com";
+$owneremail = "";
 $host = 'smtp.mailtrap.io' ;
-$username = 'c0e431343befae';
-$password ='1d5172156ef43a' ;
+$username = '';
+$password ='' ;
 
 try {
 
