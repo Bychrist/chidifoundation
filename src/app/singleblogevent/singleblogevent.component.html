@@ -1,0 +1,60 @@
+<section class="page-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title text-center">
+          <h1>{{post.title.rendered}}</h1>
+        </div>
+        <div class="breadcrumbs-area  text-center">
+          <ol class="breadcrumbs">
+            <li><a href="/#">Home</a></li>
+            <li class="active">Blog Details</li>
+          </ol>
+        </div>
+        <div class="back-home">
+          <a href="#/blog-event"><i class="fa fa-arrow-left"
+              aria-hidden="true"></i> BACK TO BLOG & EVENT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="our-blog-area pt-90 pb-60">
+    <div class="container">
+      <div class="row">
+        <!-- Start single blog -->
+        <div class="col-lg-12">
+          <div class="blog-details single-blog mb-30">
+            <div class="blog-details-title">
+              <h3>{{post.title.rendered}}</h3>
+            </div>
+            <div class="blog-info">
+
+              <div class="comment">
+                <a href="#"><i class="fa fa-calendar"
+                    aria-hidden="true"></i> {{post.date|date}}</a>
+              </div>
+            </div>
+            <div class="row">
+<div class="col-md-12">
+
+<div   class="pull-left" style="padding:50px;">
+  <img src="{{post.x_featured_media_original}}"
+
+    alt="">
+</div>
+
+  <p class="text-justify"  [innerHtml]="post.content.rendered" ></p>
+
+
+
+</div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

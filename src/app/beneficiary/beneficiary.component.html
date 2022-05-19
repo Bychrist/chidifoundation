@@ -1,0 +1,79 @@
+<span data-route="beneficiary"
+  id="myurl"></span>
+<section class="page-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title text-center">
+          <h1>Beneficiaries</h1>
+        </div>
+        <div class="breadcrumbs-area  text-center">
+          <ol class="breadcrumbs">
+            <li><a routerLink="/">Home</a></li>
+            <li class="active">Beneficiaries</li>
+          </ol>
+        </div>
+        <div class="back-home">
+          <a routerLink="/"><i class="fa fa-arrow-left"
+              aria-hidden="true"></i> BACK TO HOME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-gallery pt-90 pb-60">
+
+
+    <div class="container">
+
+
+        <div class="row">
+
+              <!-- Start section title -->
+              <div class="col-sm-12">
+                <div class="section-title text-center">
+                  <h2>OUR <span>Beneficiaries</span></h2>
+                  <img src="../../assets/img/title-bottom.png"
+                    alt="">
+                  <p>Chief Dr. Chidi Anyaegbu Foundation Beneficiaries</p>
+                </div>
+              </div>
+              <!-- End section title -->
+
+        </div>
+
+            <div class="row blog">
+
+              <div class="col-md-4 mt-3"
+                *ngFor="let post of beneficiaries;let i = index">
+                <div class="single-blog">
+                  <div class="blo-image-and-date">
+                    <img src="{{post.x_featured_media_original}}"
+                      alt="" style="width: 400px;height: 300px;">
+
+                  </div>
+
+                  <div class="blog-text">
+                    <h3 class="text-center"><a href="javascript:void(0)"  class="mybene">{{titleConversion(post.title.rendered)[0]}}</a></h3>
+                    <h3 class="text-center"  style="margin-top: -20px !important;"><a href="javascript:void(0)" class="subbene" >{{titleConversion(post.title.rendered)[1]}}</a></h3>
+                    <h3 class="text-center" style="margin-top: -20px !important;"><a href="javascript:void(0)"  class="subbene">{{titleConversion(post.title.rendered)[2]}}</a></h3>
+                    <h3 class="text-center" style="margin-top: -20px !important;"><a href="javascript:void(0)" class="subbene">{{titleConversion(post.title.rendered)[3]}}</a></h3>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+
+
+
+    </div>
+
+
+</section>

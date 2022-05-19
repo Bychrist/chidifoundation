@@ -1,0 +1,82 @@
+
+<span data-route="blog"
+  id="myurl"></span>
+<section class="page-title-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="page-title text-center">
+          <h1>Blog & Event</h1>
+        </div>
+        <div class="breadcrumbs-area  text-center">
+          <ol class="breadcrumbs">
+            <li><a href="/#/">Home</a></li>
+            <li class="active">Blog & Event</li>
+          </ol>
+        </div>
+        <div class="back-home">
+          <a routerLink="/"><i class="fa fa-arrow-left"
+              aria-hidden="true"></i> BACK TO HOME</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="up-comming-area  pt-90 pb-60">
+    <div class="container">
+      <div class="row" >
+        <div class="col-sm-12" *ngFor="let post of posts">
+          <div class="up-comming-events">
+            <!-- Start single event -->
+            <div class="single-event mb-90 row">
+              <div class="col-md-5">
+                <div class="event-image">
+                  <img src="{{post.x_featured_media_original}}"
+                    alt="">
+                  <h3 class="pt-3" style="height: 70px;width: 80px;">{{ post.date | date }}</h3>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="event-text">
+                  <h3><a href="#">{{post.title.rendered}}</a></h3>
+
+                  <p class="text-justify" [innerHtml]="post.excerpt.rendered">
+
+                 </p>
+                  <a class="btn-md bo-ra-5" [routerLink]="['/blog_event',post.id, post.slug]"
+                   >Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- End single event -->
+
+          </div>
+
+        </div>
+      </div>
+<div class="row">
+    <div class="blog-pagination float-left">
+      <nav>
+        <ul>
+          <li>
+
+
+          <a *ngIf="previousBtn == false" class="btn btn-primary" style="cursor: pointer;"  (click)="clickPrevious()">Previous </a>
+          <a *ngIf="previousBtn == true" class="btn "  style="pointer-events: none;">Previous </a>
+
+          </li>
+
+
+         <li>
+             <a *ngIf="nextBtn == false" class="btn btn-primary" style="cursor: pointer;padding-right: 10px;"  (click)="clickNext()">Next </a>
+            <a *ngIf="nextBtn == true"  style="pointer-events: none;">Next</a>
+         </li>
+
+        </ul>
+      </nav>
+    </div>
+</div>
+    </div>
+  </section>

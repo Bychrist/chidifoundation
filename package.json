@@ -10,6 +10,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-cool/http": "^13.0.0",
+    "@angular-cool/loading-indicator": "^13.0.0",
     "@angular/animations": "~12.0.0",
     "@angular/common": "~12.0.0",
     "@angular/compiler": "~12.0.0",
@@ -18,8 +20,12 @@
     "@angular/platform-browser": "~12.0.0",
     "@angular/platform-browser-dynamic": "~12.0.0",
     "@angular/router": "~12.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^12.1.1",
+    "jquery": "^3.6.0",
+    "jw-angular-pagination": "^1.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
+    "wpapi": "^1.2.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

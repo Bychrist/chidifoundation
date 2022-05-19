@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --minus-top: -100px;
+
+
+}
+
+.minustop
+{
+  margin-top: var(--minus-top);
+}
+
+.texth{
+font-size:40px;
+}
+
+.makecenter{
+  text-align: center;
+}
+
+h2{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+
+
+}
+
